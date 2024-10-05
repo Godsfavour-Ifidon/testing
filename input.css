@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-green-400 underline;
+  }
+
+  button {
+    @apply bg-teal-500 text-4xl text-white hover:bg-yellow-500 ml-5 p-3 transition-all ease-in-out duration-100 delay-1000;
+    @apply hover:rotate-45;
+  }
+}
+
+@layer components {
+  .header {
+    @apply hover:bg-blue-600 hover:rounded-2xl text-center mb-10 p-10;
+    @apply hover:animate-bounce;
+  }
+}
+
+@layer utilities {
+  .text-purple-500 {
+    color: white;
+    font-size: 2rem;
+    background: teal;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 30px;
+  }
+}
